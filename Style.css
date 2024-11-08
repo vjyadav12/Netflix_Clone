@@ -1,0 +1,359 @@
+*{
+    background-color: rgb(11, 2, 2);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 1cm;
+}
+
+nav img{
+  height: 40px; 
+  cursor: pointer;
+}
+
+nav img:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.button1{
+    background-color:  black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding-left: 30px;  
+    padding-right: 30px;
+    padding: 15px;
+    margin-right: 6px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.button2{
+    background-color:  white;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    padding-left: 30px;  
+    padding-right: 30px;
+    padding: 15px;
+
+
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.button1:hover, .button2:hover{
+  box-shadow: 0px 0px 10px gray ;
+  transition: 0.3s;
+}
+
+.vj{
+  background-image: url("./IN-en-20241028-TRIFECTA-70a8e666-af2c-419a-bc7c-afc54fde561a_large.jpg");
+  border-radius: 10px;
+  opacity: 0.5;
+  box-shadow: 0px 0px 30px red, 0px 0px 40px rgb(130, 18, 130);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin-left: 32px;
+  margin-right: 32px;
+  align-items: center;
+  /* border: 5px solid red; */
+  height: 75vh;
+  background-size: cover; 
+  background-repeat: repeat-x; 
+  animation: scroll-background 20s linear infinite;
+
+}
+
+@keyframes scroll-background {
+  from {
+      background-position: 0 0;
+  }
+  to {
+      background-position: +100% 0;
+  }
+}
+
+
+.vj h1{
+margin-top: 290px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s;
+  text-shadow: 0px 0px 10px red;
+
+}
+
+h4{
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s;
+  text-shadow: 0px 0px 10px red;
+
+}
+
+h1:hover{
+  letter-spacing: 4px;
+  color:yellow;
+}
+
+h4:hover{
+  letter-spacing: 4px;
+  color:greenyellow;
+}
+
+/* search bar */
+.searchBar{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+
+
+.input1{
+  padding: 25px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: large;
+  display: flex;
+  padding-left: 45px;
+  padding-right: 45px;
+  color: white;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: rgb(29, 23, 24);
+  cursor: pointer;
+}
+
+.input1:hover{
+  box-shadow: 0px 0px 10px gray ;
+  transition: 0.3s;
+
+}
+
+.searchBar button{
+  padding: 25px;
+  font-size: large;
+  border-radius: 50px;
+  padding-left: 45px;
+  padding-right: 45px;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0px 0px 5px gray;
+  cursor: pointer;
+}
+
+.searchBar button:hover{
+  box-shadow: 0px 0px 10px gray ;
+  transition: 0.3s;
+
+}
+
+.searchBar button:hover{
+  background-color: rgb(199, 17, 17);
+}
+
+@media (min-width:414px)  and (max-width:896px){
+  .searchBar {
+    flex-direction: column;
+  }
+
+}
+
+.Heading1{
+  color: white;
+}
+
+.Heading1:hover{
+  letter-spacing: 4px;
+  transition: 0.3s;
+  color:greenyellow;
+}
+
+.Trending_Movies{
+  /* box-shadow: 0px 0px 30px red, 0px 0px 40px rgb(130, 18, 130); */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding-left: 45px;
+  padding-right: 45px;
+
+}
+
+.Trending_Movies h1{
+  padding-right: 45px;
+
+}
+
+
+
+.card img{
+  height: 5cm;
+  width: 3cm;
+}
+
+.cards1{
+  display: flex; 
+  display: flex; 
+  gap: 23px; 
+  justify-content: center; 
+  align-items: center;
+  /* padding: 45px;   */
+}
+
+
+
+.cards1 img{
+  height: 99%; 
+  width:14%; 
+  border-radius: 10%;
+  transition: 0.5s;
+}
+
+.cards1 img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.rendomCards{
+  height: 3cm;
+  width: 2cm;
+  background-color:rgb(39, 39, 39) ;
+  width: 100%; 
+  border-radius: 10px; 
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  display:flex;
+  color: white; 
+  justify-content: space-between; 
+  padding-left: 12px;
+  padding-right: 12px;
+  align-items: center;
+}
+
+.rendomCards:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+h3{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.rendomCards img{
+  height: 1.7cm;
+  width: auto;
+}
+.cards2{
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; display: flex; 
+  flex-direction: row;
+}
+
+@media (min-width:414px) and (max-width:896px){
+  .cards2{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.rendomCards2{
+  height: 2cm;
+  width: 2cm;
+  background-color:rgb(39, 39, 39) ;
+  width: 100%; 
+  border-radius: 10px; 
+  display:flex;
+  color: white; 
+  justify-content: space-between; 
+  padding-left: 12px;
+  padding-right: 12px;
+  align-items: center;
+}
+
+.cards3{
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px;
+  /* padding-left: 70px;
+  padding-right: 70px; */
+
+}
+
+.Plus{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.Reasion_section{
+
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 30px red, 0px 0px 40px rgb(130, 18, 130); */
+
+  padding: 45px; 
+  position: relative;
+}
+
+.GetStarted{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky; 
+  top: 0;
+
+
+}
+
+.GetStarted button{
+  background-color: rgb(205, 22, 22);
+  border-radius: 40px;
+  color: white;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-left:20px;
+  padding-right:20px ;
+  /* position: sticky; */
+
+}
+
+.GetStarted button:hover{
+  background-color: red;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  justify-content:space-evenly ;
+
+}
+
+h5{
+  cursor: pointer;
+  
+}
+
+h5:hover{
+  text-decoration: underline;
+}

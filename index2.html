@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Iceland&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background-color: brown;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0),rgb(33, 17, 17),rgba(65, 27, 27, 0.853),rgba(73, 46, 46, 0.853),rgba(66, 33, 33, 0.853),rgba(59, 35, 35, 0.853),rgba(20, 13, 13, 0.827),rgba(28, 15, 15, 0.853),rgba(41, 22, 22, 0.853),rgba(29, 14, 14, 0.853),rgba(44, 24, 24, 0.853));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+    .header{
+        padding: 50px;
+        height: 80px;
+        max-width:1200px;
+        margin: 0px auto;
+        /* background-color: rgb(92, 56, 56); */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+    }
+    .logo{
+        background-image: url("https://www.pinclipart.com/picdir/big/2-23236_transparent-netflix-logo-2018-clipart.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:50px;
+        width: 180px;
+        
+    }
+    .english{
+        height:fit-content;
+        width: fit-content;
+      padding: 20px;
+        display:flex;
+        flex-direction: row;
+        gap:30px
+
+    }
+    .eng,.signin{
+        height:40px;
+        width: 120px;
+       
+        border-radius: 100px;
+        font-weight: 1000;
+    }
+    .eng{
+     background-color:rgba(255, 255, 255, 0);
+     display: flex;
+     color: white;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        width: 130px;
+        padding-left: 10px;
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.421);
+        cursor: pointer;
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.214),0px 0px 7px rgba(255, 255, 255, 0.223),inset 0px 0px 18px rgba(255, 255, 255, 0.196),inset 0px 0px 7px rgba(255, 255, 255, 0.173);
+    }
+    .eng option{
+        color: black;
+        border: 0px;
+    }
+    .signin{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        transition: all 0.4s;
+        box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.214),0px 0px 7px rgba(255, 255, 255, 0.223),inset 0px 0px 18px rgba(255, 255, 255, 0.196),inset 0px 0px 7px rgba(255, 255, 255, 0.173);
+        
+    }
+    .signin:hover{
+        background-color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        box-shadow: 0px 0px 5px red,0px 0px 20px rgba(255, 0, 0, 0.356);
+    }
+
+.middleheader{
+    height: 550px;
+    margin: 10px 0px 20px ;
+    max-width: 1400px;
+  /* background-image: linear-gradient(to left,rgb(255, 255, 255),rgba(255, 255, 255, 0), rgba(255, 0, 0, 0), rgb(255, 255, 255)); */
+   box-shadow: 0px 80px 60px rgba(0, 0, 0, 0.103),0px 60px 60px rgba(0, 0, 0, 0.24);
+    display: flex;
+    /* border-top: 2px solid white; */
+    /* border-left: 2px solid white; */
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    overflow: hidden;
+   /* border-image: linear-gradient(to right, rgb(255, 255, 255),rgba(255, 0, 0, 0), rgba(0, 0, 0, 0)) 1; */
+    border-radius:30px ;
+    
+}
+.middleheader:hover{
+    /* background-image: linear-gradient(to left,rgb(255, 255, 255),rgb(255, 0, 0), rgb(255, 255, 255), rgb(255, 255, 255)); */
+    border-radius: 30px;
+    /* box-shadow: 0px 10px 60px rgba(255, 0, 0, 0.734),0px 0px 60px rgba(255, 255, 255, 0.332); */
+}
+.backbox{
+    background-image: url("https://mobilevikings.be/content/uploads/2022/03/bg-streamz-lp-1.jpeg");
+    height: 560px;
+    max-width: 1400px;
+    min-width: 1200px;
+     box-shadow:inset 0px -30px 20px rgba(57, 33, 33, 0.179),inset 0px -40px 40px rgba(203, 130, 130, 0.332),inset 0px -100px 40px rgba(83, 43, 43, 0.748),inset 0px -80px 190px rgba(177, 80, 80, 0.345);
+
+    background-size:1300px;
+    border-image: linear-gradient(to right, rgb(255, 255, 255),rgba(255, 0, 0, 0), rgba(0, 0, 0, 0)) 1;
+    margin: 0px 0px 0px 0px;
+    
+    border-radius: 30px;
+    transition: all .5s;
+    animation: moving 130s linear 1s infinite normal ;
+}
+@keyframes moving {
+    0%{
+        background-position-y:0px ;
+
+    }
+    100%{
+        background-position-x:-8000px ;
+    }
+    
+}
+.backbox:hover{
+   
+}
+
+.Unlimited{
+    /* background-color: rgba(255, 255, 255, 0.221); */
+    position: absolute;
+    font-weight:bolder;
+    display: flex;
+    
+    
+    
+}
+.Unlimited h1{
+    padding: 120px 50px 0px ;
+    font-weight:bolder;
+    color: white;
+    font-size:70px;
+    transition: all 0.5s;
+}
+
+.cancel {
+ position: absolute;
+ margin-top: 300px;
+    font-weight:bolder;
+    color: white;
+    font-size: 33px;
+}
+.cancel:hover{
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+}
+.signin{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        transition: all 0.4s;
+        
+    } .getstarted{
+        height:50px;
+        margin: 20px 0px ;
+        width: 120px;
+        /* background-color: black; */
+        border-radius: 100px;
+        font-weight: 1000;
+        background-color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        box-shadow: 0px 0px 12px rgba(255, 0, 0, 0.51),0px 0px 7px rgba(255, 0, 0, 0.525),inset 0px 0px 4px rgba(255, 0, 0, 0.53),inset 0px 0px 7px rgba(255, 0, 0, 0.173);
+        transition: all 0.4s;
+        
+    }
+    .getstarted:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 0, 0);
+        cursor: pointer;
+        box-shadow: 0px 0px 5px rgb(255, 255, 255),0px 0px 20px rgba(255, 255, 255, 0.356);
+    }
+    .tb{
+        height:50px;
+        width: 420px;
+        /* background-color: black; */
+        border-radius: 100px;
+        font-weight: 1000;
+        background-color: white;
+        font-size: 20px;
+        padding-left: 20px;
+        border:0px;
+        box-shadow: 0px 0px 5px rgb(255, 255, 255),0px 0px 20px rgba(255, 255, 255, 0.356);
+        transition: all 0.5s;
+        
+    }
+    input::placeholder{
+
+        /* background-color: black; */
+        font-size: 20px;
+        padding-left: 20px;
+
+    }
+    input:focus{
+        outline: none;
+        border: 0px;
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.625),0px 0px 20px rgba(255, 255, 255, 0.356);
+        
+    }
+.searchheader{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    transition: all 0.5s;
+    justify-content: center;
+    align-items: center;
+    
+}
+button{background-color: rgba(240, 248, 255, 0.011);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    border-radius: 100px;
+    border:0px;
+    padding: 20px;
+}
+.full{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width:1250px) {
+.middleheader{
+    max-width :1000px;;
+}
+}
+@media (max-width:1050px) {
+.middleheader{
+    max-width :800px;;
+}
+}
+@media (max-width:850px) {
+.middleheader{
+    max-width :600px;
+}
+}
+@media (max-width:650px) {
+.middleheader{
+    transition: all 0.5s;
+    max-width :400px;
+    
+}
+@media (max-width:650px) {
+.searchheader {
+    flex-direction: column;
+    transition: all 0.5s;
+    
+}
+.header{
+    
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    margin:0px 0px 20px ;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.logo{
+    transition: all 0.5s;
+    position: absolute;
+    margin:20px 0px 50px ;
+    
+    
+}
+}
+.middleheader h1{
+    font-size: 40px;
+}
+.middleheader p{
+    transition: all 0.5s;
+    font-size: 20px;
+}
+}
+@media (max-width:450px) {
+.searchheader input {
+    width: 300px;
+    
+}.middleheader{
+    transition: all 0.5s;
+     width: 300px;
+   
+}
+.middleheader h1{
+    font-size: 30px;
+    margin-top:30px ;
+}
+.middleheader p{
+    transition: all 0.5s;
+    font-size: 15px;
+    
+}
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    /* background-color:red; */
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 50px;
+    width: 1000px;
+}
+.iconss{
+    display: flex;
+    flex-direction:column;
+    gap:15px;
+    /* background-color:red; */
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 50px;
+    width: 1000px;
+}
+.uno{
+    height: 300px;
+    background: #000;
+    width:100%;
+    border-radius:20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.unoo{
+    height: 100px;
+    background: #000;
+    width:100%;
+    border-radius:20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px  20px;
+    color: white;
+}
+.unoo img{
+    height:50px;
+    width:50px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.uno:hover{
+    transform: scale(1.1);
+}
+.trending{
+overflow: hidden;
+   max-width:1200px;
+   display: flex;
+   flex-direction: column;
+    margin: 40px ;
+    /* background-color: rgb(120, 120, 120); */
+}
+.trending h1{
+    padding-left: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.list h1{
+    padding-left: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.list .uno{
+    max-width:1200px;
+   display: flex;
+   flex-direction: column;
+    margin: 40px ;
+}
+.a{
+    background-image: url("https://wallpapercave.com/wp/wp11410643.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.b{
+    background-image: url("https://th.bing.com/th/id/OIP.n2lDNH6uahab5WxdQuB8xAHaLH?rs=1&pid=ImgDetMain");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c{
+    background-image: url("https://th.bing.com/th/id/OIP.Vpth5WdH20I91NOKRXhCmwHaKj?rs=1&pid=ImgDetMain");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.d{
+    background-image: url("https://picfiles.alphacoders.com/379/379031.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.e{
+    background-image: url("https://www.themoviedb.org/t/p/w440_and_h660_face/9U3mpKlWMNVnGfxYG97xE56WO2V.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+</style>
+<body>
+    
+        <div class="header">
+            <div class="logo"></div>
+            <div class="english">
+                <select class="eng">
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Spanish</option>
+                </select>
+                <div class="signin">Sign In</div></div>
+            
+   </div>
+<div class="full">
+        <div class="middleheader">
+            <div class="backbox"></div>
+            <div class="Unlimited"><h1>Unlimited movies, TV <br>Shows and more.</h1></div>
+            <div class="cancel"><P>Starts at $9. Cancel at any time.</P></div>
+        </div>
+        <div class="searchheader">
+            <input  type="email" class="tb" required placeholder="Enter Email Address">
+           <button  type="submit"><div class="getstarted">Get Started</div></button> 
+        </div>
+    
+    <div class="trending">
+        <h1>Trending Now</h1>
+        <div class="icons">
+            <div class="uno a"></div>
+            <div class="uno b"></div>
+            <div class="uno c"></div>
+            <div class="uno d"></div>
+            <div class="uno e"></div>
+        </div>
+    </div>
+    <div class="trending">
+        <h1>Only on Netflix</h1>
+        <div class="icons">
+            <div class="uno a"></div>
+            <div class="uno b"></div>
+            <div class="uno c"></div>
+            <div class="uno d"></div>
+            <div class="uno e"></div>
+        </div>
+    </div>
+    <div class="list">
+        <h1>Only on Netflix</h1>
+        <div class="iconss">
+            <div class="unoo "><h2>stories</h2><img src="https://www.svgrepo.com/show/45346/plus-sign-inside-a-box.svg"></div>
+            <div class="unoo "><h2>stories</h2><img src="https://www.svgrepo.com/show/45346/plus-sign-inside-a-box.svg"></div>
+            <div class="unoo "><h2>stories</h2><img src="https://www.svgrepo.com/show/45346/plus-sign-inside-a-box.svg"></div>
+            <div class="unoo "><h2>stories</h2><img src="https://www.svgrepo.com/show/45346/plus-sign-inside-a-box.svg"></div>
+            <div class="unoo "><h2>stories</h2><img src="https://www.svgrepo.com/show/45346/plus-sign-inside-a-box.svg"></div>
+        </div>
+    </div>
+    <div class="list">
+        <h1>Only on Netflix</h1>
+        <div class="iconss">
+            <div class="unoo "><h2>stories</h2><img src="https://www.svgrepo.com/show/45346/plus-sign-inside-a-box.svg"></div>
+            <div class="unoo "><h2>stories</h2><img src="https://www.svgrepo.com/show/45346/plus-sign-inside-a-box.svg"></div>
+            <div class="unoo "><h2>stories</h2><img src="https://www.svgrepo.com/show/45346/plus-sign-inside-a-box.svg"></div>
+            <div class="unoo "><h2>stories</h2><img src="https://www.svgrepo.com/show/45346/plus-sign-inside-a-box.svg"></div>
+            <div class="unoo "><h2>stories</h2><img src="https://www.svgrepo.com/show/45346/plus-sign-inside-a-box.svg"></div>
+        </div>
+    </div>
+    
+    </div>
+</body>
+</html>
